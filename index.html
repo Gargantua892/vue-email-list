@@ -14,7 +14,11 @@
 </head>
 <body>
     <main id="app">
-
+        <ul id="mail-list">
+            <li v-for="item in mail">
+                <p>{{item.user}}</p>
+            </li>
+        </ul>
     </main>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
