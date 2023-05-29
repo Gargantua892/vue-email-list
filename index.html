@@ -7,7 +7,6 @@
 
     <!-- Fogli di stile -->
     <link rel="stylesheet" href="css/style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>Mailing List</title>
@@ -16,7 +15,12 @@
     <main id="app">
         <ul id="mail-list">
             <li v-for="item in mail">
-                <p>{{item.user}}</p>
+                <p v-if="item">
+                    {{item.user}}
+                </p>
+                <p v-else>
+                    Non ci sono contatti nella tua lista.
+                </p>
             </li>
         </ul>
     </main>

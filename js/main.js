@@ -6,8 +6,8 @@ createApp({
     data() {
         return {
             mail: [
-
-        ],
+                
+            ],
 
             
         }
